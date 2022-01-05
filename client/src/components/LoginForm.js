@@ -48,10 +48,10 @@ const LoginForm = () => {
           show={showAlert}
           variant="danger"
         >
-          Something went wrong with your login credentials!
+          Incorrect username or password
         </Alert>
         <Form.Group>
-          <Form.Label htmlFor="email">Email</Form.Label>
+          <Form.Label htmlFor="email">EMAIL</Form.Label>
           <Form.Control
             type="text"
             placeholder="Your email"
@@ -61,12 +61,12 @@ const LoginForm = () => {
             required
           />
           <Form.Control.Feedback type="invalid">
-            Email is required!
+            ENTER EMAIL
           </Form.Control.Feedback>
         </Form.Group>
 
         <Form.Group>
-          <Form.Label htmlFor="password">Password</Form.Label>
+          <Form.Label htmlFor="password">ENTER PASSWORD</Form.Label>
           <Form.Control
             type="password"
             placeholder="Your password"
@@ -87,7 +87,7 @@ const LoginForm = () => {
           Submit
         </Button>
       </Form>
-      {error && <div>Login failed</div>}
+      {error && <div>FAILED TO LOG IN</div>}
     </>
   );
 };
